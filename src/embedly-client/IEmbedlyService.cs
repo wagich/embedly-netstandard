@@ -7,7 +7,7 @@ namespace Embedly
 {
     public interface IEmbedlyService
     {
-        Task<IEmbedContent> LoadContent(string url);
+        Task<IEmbedContent> LoadContent(string url, string additionalUrlParameters);
 
         Task<EmbedExtract> ExtractContent(string url);
 
